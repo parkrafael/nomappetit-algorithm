@@ -5,6 +5,13 @@ CREATE TABLE ratings (
     PRIMARY KEY (restaurant_id, user_id)
 );
 
+CREATE TABLE restaurants (
+    restaurant_id TEXT PRIMARY KEY,
+    delivery BOOLEAN,
+    dine_in BOOLEAN,
+    reservable BOOLEAN,
+);
+
 INSERT INTO ratings (user_id, restaurant_id, rating) 
 VALUES 
     ('U1', 'R1', 1),
@@ -47,3 +54,18 @@ VALUES
     ('U6', 'R5', 3),
     ('U6', 'R8', 2),
     ('U6', 'R11', 4);
+
+INSERT INTO restaurants(restaurant_id, delivery, dine_in, reservable)
+VALUES
+    ('R1', TRUE, FALSE, TRUE),
+    ('R2', TRUE, TRUE, FALSE),
+    ('R3', FALSE, TRUE, TRUE),
+    ('R4', TRUE, FALSE, FALSE),
+    ('R5', FALSE, FALSE, TRUE),
+    ('R6', TRUE, TRUE, FALSE),
+    ('R7', FALSE, TRUE, TRUE),
+    ('R8', TRUE, FALSE, TRUE),
+    ('R9', TRUE, TRUE, FALSE),
+    ('R10', FALSE, TRUE, FALSE),
+    ('R11', TRUE, FALSE, TRUE),
+    ('R12', FALSE, TRUE, FALSE);
