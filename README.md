@@ -30,4 +30,4 @@ Using cosine similarity, we identified that `U3` and `U6` are the most similar t
 
 ### Poll Filtering
 
-We convert the list of restaurants and their ratings and then cross-validate them with the user's preferences obtained from the poll.
+We convert the list of restaurants and their ratings and then cross-validate them with the user's preferences obtained from the poll. 
