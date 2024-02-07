@@ -1,7 +1,14 @@
 from algorithm import user_suggestion
 
 def main():
-    user_suggestion('U1', 'R10')
+
+    test_json = {
+        'delivery': True,
+        'dine_in': True,
+        'reservable': False,
+    }
+
+    user_suggestion('U3', test_json)
 
 main()
 
