@@ -24,7 +24,7 @@ To enhance the comparison of ratings among users and mitigate the impact of miss
 
 Once we have normalized the ratings for each user, we can proceed to calculate the cosine similarity between the current user and all other users in the database. This similarity metric quantifies the angle between the vectors representing the ratings of different users in a multidimensional space. Users with a cosine similarity value closer to 1 are considered more similar, while those closer to 0 are less similar. By identifying users with high cosine similarity to the current user, we can determine which users' preferences align most closely, enabling more accurate recommendations based on collaborative filtering.
 
-![alt text](images/image4.png)
+![alt text](images/image6.png)
 
 Using cosine similarity, we identified that `U3` and `U6` are the most similar to our current user `U1`. With this information, we can estimate a rating for the missing restaurants using a weighted average.
 
