@@ -1,6 +1,6 @@
 # Nom Appetit Recommendation Algorithm 
 
-Nom Appetit's Restaurant Recommendation Engine, powered by Collaborative Filtering.
+Recommendation Algorithm for 'Nom Appetit' using Collaborative Filtering 
 
 ## Environment Setup
 
